@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Портфолио разработчика Telegram-ботов и AI-автоматизаций. Боты, продуктовые прототипы, интеграции и ML-решения.">
-  <meta name="theme-color" content="#0b0d0c">
+  <meta name="description" content="FORM / LOGIC — сайты для бизнеса, Telegram-продукты и автоматизация. Проекты, интерактивные демо и разработка от идеи до запуска.">
+  <meta name="theme-color" content="#f5f4f0">
   <title>FORM / LOGIC — Digital Product Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="studio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/atelier-glass.png">
+  <link rel="stylesheet" href="portfolio.css?v=20260924-9">
 </head>
 <body>
+  <div class="ambient-scene" aria-hidden="true"></div>
+  <a class="skip-link" href="#work">Перейти к проектам</a>
   <div class="reading-progress" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
@@ -22,6 +24,7 @@
     </a>
     <nav class="desktop-nav" aria-label="Основная навигация">
       <a href="#work">Кейсы</a>
+      <a href="#business-web">Демо проекта</a>
       <a href="#services">Что делаю</a>
       <a href="#about">Обо мне</a>
     </nav>
@@ -33,53 +36,32 @@
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> Открыт к проектам и работе в команде</div>
         <p class="hero-index">НЕЗАВИСИМЫЙ РАЗРАБОТЧИК <span>ПОРТФОЛИО / 2026</span></p>
-        <h1>Собираю<br><span class="hero-outline">цифровое.</span><span class="title-star" aria-hidden="true">✳</span></h1>
+        <h1>Сложное внутри.<br><span class="hero-outline">Просто снаружи.</span></h1>
         <p class="hero-specialties">Сайты <span>/</span> Telegram-боты <span>/</span> AI</p>
-        <p class="hero-text">Превращаю идею в работающий продукт: продумываю сценарии, собираю логику, подключаю сервисы, тестирую и довожу до запуска.</p>
+        <p class="hero-text">Разрабатываю сайты и Telegram-ботов, которые решают конкретные задачи: записать клиента, собрать каталог, сохранить важное. Показываю, как это работает.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Посмотреть кейсы <span>↓</span></a>
-          <a class="text-link" href="#contact">Есть задача? Напишите мне <span>↗</span></a>
+          <a class="text-link" href="#business-web">Попробовать запись <span>↗</span></a>
         </div>
       </div>
 
-      <div class="hero-visual reveal" aria-label="Абстрактная скульптура: пересечение идеи, логики и реализации">
-        <span class="art-label">EXPERIMENT № 001</span>
-        <svg class="orbit-sculpture" viewBox="0 0 600 560" fill="none" aria-hidden="true">
-          <defs>
-            <linearGradient id="metal" x1="100" y1="100" x2="460" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#f6f8ed"/><stop offset=".2" stop-color="#646d61"/><stop offset=".38" stop-color="#e7edde"/><stop offset=".5" stop-color="#fbfff4"/><stop offset=".62" stop-color="#444e40"/><stop offset=".8" stop-color="#c1cdb8"/><stop offset="1" stop-color="#eff5e8"/></linearGradient>
-            <linearGradient id="acid" x1="200" y1="50" x2="400" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#e2ff95"/><stop offset=".45" stop-color="#bfff3c"/><stop offset="1" stop-color="#456119"/></linearGradient>
-            <radialGradient id="halo"><stop stop-color="#b9ef7140"/><stop offset="1" stop-color="#b9ef7100"/></radialGradient>
-            <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-opacity=".45"/></filter>
-          </defs>
-          <circle cx="300" cy="280" r="265" fill="url(#halo)"/>
-          <g filter="url(#shadow)">
-            <ellipse cx="300" cy="280" rx="218" ry="102" transform="rotate(-38 300 280)" stroke="url(#metal)" stroke-width="32"/>
-            <ellipse cx="300" cy="280" rx="218" ry="102" transform="rotate(38 300 280)" stroke="url(#metal)" stroke-width="32"/>
-            <ellipse cx="300" cy="280" rx="218" ry="102" transform="rotate(90 300 280)" stroke="url(#acid)" stroke-width="32"/>
-          </g>
-          <circle cx="300" cy="280" r="23" fill="#d5ff77"/>
-          <circle cx="300" cy="280" r="38" stroke="#d5ff7750"/>
-        </svg>
-        <div class="art-coordinate">ИДЕЯ × ЛОГИКА × РЕАЛИЗАЦИЯ</div>
-        <a class="art-link" href="#work" aria-label="Перейти к проектам">↘</a>
+      <div class="hero-visual project-directory reveal" aria-label="Выбранные проекты">
+        <div class="directory-head"><span>ОТ ЗАДАЧИ К РЕШЕНИЮ</span><span>SELECTED / 01—03</span></div>
+        <a class="directory-item" href="#business-web"><span class="directory-number">01</span><div><small>САЙТ ДЛЯ АВТОСЕРВИСА</small><h2>Клиент выбирает время.<br>Сервис получает заявку.</h2><span class="directory-chip">Попробовать запись →</span></div></a>
+        <a class="directory-item" href="#photo-bot"><span class="directory-number">02</span><div><small>БОТ ДЛЯ КАТАЛОГА</small><h2>Много фото.<br>Один готовый архив.</h2><span class="directory-chip">Посмотреть отбор фото →</span></div></a>
+        <a class="directory-item" href="#coin-fortuna"><span class="directory-number">03</span><div><small>COIN FORTUNA / TELEGRAM</small><h2>Не только кнопки.<br>Логика целого продукта.</h2><span class="directory-chip">Разобрать устройство →</span></div></a>
+        <div class="directory-footer">Реальные задачи. Понятный результат.</div>
       </div>
       <div class="hero-bottom"><span>ОТ ЗАДАЧИ ДО РАБОТАЮЩЕЙ ВЕРСИИ</span><span>ЛИСТАЙТЕ ДАЛЬШЕ ↓</span></div>
-    </section>
-
-    <section class="proof-strip" aria-label="Факты о работе">
-      <div><strong>7</strong><span>проектов и прототипов</span></div>
-      <div><strong>109</strong><span>автотестов в главном проекте</span></div>
-      <div><strong>134</strong><span>обработчика Telegram</span></div>
-      <div><strong>3</strong><span>направления: web, боты и AI</span></div>
     </section>
 
     <section id="work" class="work section-shell section-space">
       <div class="section-heading reveal">
         <div>
           <p class="kicker">[ 01 — ИЗБРАННЫЕ РАБОТЫ ]</p>
-          <h2>Избранное<span class="heading-period">.</span><sup>07</sup></h2>
+          <h2>Не просто экран.<br><span class="heading-soft">Решённая задача.</span><sup>07</sup></h2>
         </div>
-        <p>Продукты, инструменты и эксперименты.<br>У каждого — своя задача, логика и результат.</p>
+        <p>У каждого проекта — своя задача, мой вклад и результат. Демо на странице показывают отдельные сценарии, а не подключаются к рабочим сервисам.</p>
       </div>
 
       <div class="project-toolbar" hidden>
@@ -93,16 +75,17 @@
       </div>
       <article class="featured-case reveal" data-category="bots" id="coin-fortuna">
         <div class="case-copy">
-          <div class="case-meta"><span>ГЛАВНЫЙ КЕЙС</span><span>2026</span></div>
-          <p class="case-number">01 / TELEGRAM ECOSYSTEM</p>
+          <div class="case-meta"><span>01 / TELEGRAM-ПРОДУКТ</span><span class="project-badge">Главный проект</span></div>
+          <p class="case-number">ЛОГИКА ПРОДУКТА · РАЗРАБОТАННЫЙ ПРОЕКТ</p>
           <h3>Coin Fortuna</h3>
-          <p class="case-lead">Telegram‑продукт с играми, платежами, профилями, реферальной системой и админ‑контуром.</p>
-          <p class="case-description">Вёл развитие продукта от пользовательских сценариев до безопасной финансовой логики: атомарные операции, защита от повторных списаний, аудит балансов, резерв, возвраты и восстановление после сбоев.</p>
+          <p class="case-lead">Игровой Telegram-бот с профилем, бонусами и учётом операций.</p>
+          <p class="case-description">Пользователю — понятные действия. Владельцу — управление и история операций. Под интерфейсом — защита от повторных списаний и восстановление после сбоев.</p>
+          <div class="project-contribution"><span>МОЙ ВКЛАД</span><p>Пользовательские сценарии · логика бота · платежи и учёт · проверки</p></div>
           <ul class="tag-list" aria-label="Технологии Coin Fortuna">
             <li>Python</li><li>aiogram 3</li><li>SQLite</li><li>Payments</li><li>Systemd</li><li>Tests</li>
           </ul>
           <div class="case-facts">
-            <div><strong>109/109</strong><span>тестов проходят</span></div>
+            <div><strong>109</strong><span>автотестов в проекте</span></div>
             <div><strong>7</strong><span>игровых механик</span></div>
             <div><strong>3</strong><span>платёжных сценария</span></div>
           </div>
@@ -113,58 +96,61 @@
             <div class="fortuna-core"><span class="fortuna-emblem" aria-hidden="true">CF</span><div><b>Coin Fortuna</b><span>Telegram-продукт</span></div><span class="core-label">01</span></div>
             <div class="fortuna-branches" aria-hidden="true"></div>
             <div class="fortuna-modules">
-              <div class="fortuna-module"><span class="module-symbol" aria-hidden="true">◎</span><b>Профиль</b><span>Баланс и история</span></div>
-              <div class="fortuna-module"><span class="module-symbol" aria-hidden="true">⚄</span><b>Игры</b><span>7 игровых механик</span></div>
-              <div class="fortuna-module"><span class="module-symbol" aria-hidden="true">↗</span><b>Платежи</b><span>Пополнение и вывод</span></div>
-              <div class="fortuna-module"><span class="module-symbol" aria-hidden="true">✧</span><b>Бонусы</b><span>VIP и рефералы</span></div>
+              <button type="button" class="fortuna-module" data-module="profile" aria-pressed="true" aria-controls="module-detail"><span class="module-symbol" aria-hidden="true">◎</span><b>Профиль</b><span>Баланс и история</span></button>
+              <button type="button" class="fortuna-module" data-module="games" aria-pressed="false" aria-controls="module-detail"><span class="module-symbol" aria-hidden="true">⚄</span><b>Игры</b><span>7 игровых механик</span></button>
+              <button type="button" class="fortuna-module" data-module="payments" aria-pressed="false" aria-controls="module-detail"><span class="module-symbol" aria-hidden="true">↗</span><b>Платежи</b><span>Пополнение и вывод</span></button>
+              <button type="button" class="fortuna-module" data-module="bonus" aria-pressed="false" aria-controls="module-detail"><span class="module-symbol" aria-hidden="true">✧</span><b>Бонусы</b><span>VIP и рефералы</span></button>
             </div>
-            <div class="fortuna-foundation"><span class="foundation-label">ОСНОВА СИСТЕМЫ</span><b>Учёт каждой операции</b><p>Баланс → операция → запись в журнале</p><div><span>Администрирование</span><span>Проверки и восстановление</span></div></div>
+            <div class="fortuna-foundation" id="module-detail" aria-live="polite"><span class="foundation-label">01 / ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</span><b>Вся информация в одном месте</b><p>Пользователь видит баланс и историю своих операций. За интерфейсом — единый учёт действий и изменений.</p></div>
           </div>
-          <p class="map-caption">Схема возможностей проекта</p>
+          <section class="operation-demo" aria-label="Пример защиты от повторной обработки"><p class="kicker">ПОПРОБУЙТЕ · НАДЁЖНОСТЬ ПОД КАПОТОМ</p><h4>Одно действие — одна запись.</h4><p>Что произойдёт, если одна и та же операция придёт боту дважды?</p><div class="operation-ledger" role="status" aria-live="polite">В учебном журнале пока нет операций.</div><div class="lab-actions"><button type="button" class="case-button" id="operation-send">Обработать учебную операцию →</button><button type="button" class="lab-reset" id="operation-reset">Сбросить</button></div><p class="map-caption">Упрощённая иллюстрация защиты от повторов. Без денег и подключения к боту.</p></section>
+          <p class="map-caption">Нажмите на раздел, чтобы узнать, как он работает. Это карта продукта, не работающий бот.</p>
         </div>
       </article>
 
       <article class="booking-case reveal" id="business-web" data-category="web">
-        <div class="booking-art" aria-label="Иллюстрация сценария онлайн-записи">
+        <div class="booking-art" aria-label="Интерактивный пример записи в автосервис">
           <span class="booking-art-label">ДЕМО / ОНЛАЙН-ЗАПИСЬ</span>
-          <div class="appointment"><div class="appointment-top"><span class="appointment-logo">З</span><b>Заман Сервис</b><span>↗</span></div><p>Ваше время.<br><em>Ваш сервис.</em></p><div class="appointment-days"><span>ПН<br><b>24</b></span><span>ВТ<br><b>25</b></span><span class="picked">СР<br><b>26</b></span><span>ЧТ<br><b>27</b></span><span>ПТ<br><b>28</b></span></div><div class="appointment-slot"><span>Диагностика автомобиля</span><b>10:30</b></div><div class="appointment-footer">Пример выбранного времени <span>↗</span></div></div>
+          <div id="inline-booking"></div>
           <span class="booking-art-caption">КЛИЕНТ → ЗАПИСЬ → ВЛАДЕЛЕЦ</span>
         </div>
         <div class="booking-copy">
-          <div class="case-meta"><span>САЙТ ДЛЯ БИЗНЕСА · ИНТЕРАКТИВНОЕ ДЕМО</span><span>02</span></div>
-          <h3>Запись в автосервис.<br>И ещё две сферы.</h3>
+          <div class="case-meta"><span>02 / САЙТ ДЛЯ БИЗНЕСА</span><span class="project-badge">Можно попробовать</span></div>
+          <h3>Автосервис.<br>Запись без звонка.</h3>
           <p>Проект «Заман Сервис»: клиент выбирает услугу, указывает автомобиль, время и контакты. Владелец видит заявку в своём рабочем экране и меняет её статус.</p>
-          <p>Тот же сценарий адаптирован для студии красоты и стоматологии: меняются услуги, поля формы, тексты и оформление.</p>
+          <div class="project-benefits"><span>01 <b>Выбор услуги</b></span><span>02 <b>Удобное время</b></span><span>03 <b>Заявка владельцу</b></span></div>
           <ul class="tag-list"><li>React</li><li>TypeScript</li><li>Онлайн-запись</li><li>Кабинет владельца</li></ul>
           <p class="project-note">Демонстрационный прототип: заявки хранятся в состоянии страницы. Сервер, реальные уведомления и сохранение записей между сеансами ещё не подключены.</p>
         </div>
       </article>
 
       <div class="automation-cases">
-        <article class="case-card collection-case reveal" data-category="bots">
+        <article class="case-card collection-case reveal" data-category="bots" id="photo-bot">
           <div class="case-meta"><span>TELEGRAM · E-COMMERCE</span><span>03</span></div>
-          <div class="workflow-preview" aria-label="Ссылка на магазин, сбор фотографий, ZIP-архив"><span>URL</span><b>→</b><span>ФОТО</span><b>→</b><span>ZIP</span></div>
-          <h3>Бот для сбора фотографий товаров</h3>
-          <p>Принимает ссылку на страницу или каталог ювелирного магазина, находит доступные изображения, проверяет качество, удаляет дубликаты и собирает ZIP-архивы для отправки в Telegram.</p>
+          <div class="catalog-cover" aria-label="Иллюстрация: фотографии товаров собираются в ZIP-архив"><span class="cover-eyebrow">CATALOG → COLLECTION</span><div class="photo-stack" aria-hidden="true"><i>◇</i><i>◯</i><i>✧</i></div><div class="zip-folder"><span>↓</span><b>collection.zip</b><small>Фотографии без повторов</small></div><span class="cover-bottom">СБОР · ПРОВЕРКА · УПАКОВКА</span></div>
+          <h3>Фото товаров.<br>Без ручного скачивания.</h3>
+          <p>Бот собирает фотографии товаров по ссылке на магазин, отбирает изображения и убирает повторы. Вместо ручного сохранения — ZIP в Telegram.</p>
           <ul class="tag-list"><li>Python · aiogram</li><li>Shopify</li><li>Дедупликация</li><li>Отмена и прогресс</li></ul>
-          <p class="project-note">Работает с доступным контентом, учитывает robots.txt и ограничения сайта. Реальный запуск бота в этой проверке не выполнялся.</p>
+          <p class="project-note">Для контента, который разрешено использовать. С учётом robots.txt и ограничений источника.</p>
+          <section class="pipeline-lab glass-panel" aria-labelledby="pipeline-title"><div class="lab-top"><span>ПОПРОБУЙТЕ СЦЕНАРИЙ БОТА</span><span class="lab-badge">Локальная симуляция</span></div><div class="lab-title"><div><h3 id="pipeline-title">Какие фото попадут в архив?</h3><p>Посмотрите, как фотографии превращаются в архив.</p></div><span class="signal-icon" aria-hidden="true">↳</span></div><div class="pipeline-input"><label for="pipeline-source">Учебный набор</label><select id="pipeline-source"><option value="catalog">Каталог · 8 файлов, есть повторы</option><option value="clean">Подборка · 6 уникальных файлов</option><option value="mixed">Смешанный · 10 файлов, есть мелкие фото</option></select></div><div class="file-cloud" aria-label="Файлы учебного каталога"></div><ol class="pipeline-steps"><li data-stage="0"><span>01</span><b>Получить</b><small>Учебные файлы</small></li><li data-stage="1"><span>02</span><b>Проверить</b><small>Размер и повторы</small></li><li data-stage="2"><span>03</span><b>Собрать</b><small>Готовая подборка</small></li></ol><p id="pipeline-status" class="lab-status" role="status" aria-live="polite">Все данные демонстрационные. Никаких запросов к чужим сайтам.</p><div class="lab-actions"><button type="button" class="button button-primary" id="pipeline-run">Запустить процесс <span>→</span></button><button type="button" class="lab-reset" id="pipeline-reset" disabled>Заново</button></div><p class="lab-footnote">Визуализация сценария бота для фотографий. Реальный ZIP здесь не создаётся.</p></section>
         </article>
         <article class="case-card archive-case reveal" data-category="bots">
           <div class="case-meta"><span>TELEGRAM · АВТОМАТИЗАЦИЯ</span><span>04</span></div>
-          <div class="workflow-preview" aria-label="Новая публикация, сохранение состояния, архив"><span>ПОСТ</span><b>→</b><span>УЧЁТ</span><b>→</b><span>АРХИВ</span></div>
-          <h3>Архиватор Telegram-публикаций</h3>
-          <p>Переносит новые публикации из доступного канала в архив: текст, форматирование, медиа и альбомы. Сохраняет позицию обработки и догоняет пропущенные сообщения после перезапуска.</p>
+          <div class="archive-cover" aria-label="Иллюстрация: публикации и медиа сохраняются в архив"><span class="cover-eyebrow">CONTENT → ARCHIVE</span><div class="archive-stack"><div><span>01</span><b>Публикация</b><i>Текст + форматирование</i></div><div><span>02</span><b>Медиа и альбомы</b><i>Фотографии + файлы</i></div><div><span>↳</span><b>Точка сохранения</b><i>Продолжение после перезапуска</i></div></div><span class="cover-bottom">СОХРАНИТЬ. ПРОДОЛЖИТЬ. НЕ ПОТЕРЯТЬ.</span></div>
+          <h3>Публикации —<br>в своём архиве.</h3>
+          <p>Инструмент переносит новые посты, медиа и альбомы из Telegram-канала в архив. После перезапуска продолжает с того места, где остановился.</p>
           <ul class="tag-list"><li>Python · Telethon</li><li>SQLite</li><li>Медиа и альбомы</li><li>Восстановление</li></ul>
           <p class="project-note">Для собственных каналов и контента с разрешением на копирование. Изменения и удаления исходных постов не синхронизируются.</p>
         </article>
       </div>
 
+      <div class="research-heading"><div><span>ЛАБОРАТОРИЯ / 03 ЭКСПЕРИМЕНТА</span><h3>За пределами интерфейса.</h3></div><p>Компьютерное зрение и модели.<br>Результаты, которые можно измерить.</p></div>
       <div class="case-grid">
         <article class="case-card case-vision reveal" data-category="ml">
           <div class="case-meta"><span>COMPUTER VISION</span><span>05</span></div>
           <div class="floorplan-preview"><img src="assets/floorplans.jpg" alt="Примеры планировок для распознавания площади" loading="lazy"></div>
           <h3>Площадь квартиры по планировке</h3>
-          <p>OCR‑система извлекает числа с изображений и выбирает итоговую площадь через ранжирование кандидатов.</p>
+          <p>Находит площадь на изображении планировки, чтобы не переписывать цифры вручную. Эксперимент с распознаванием текста и выбором подходящего значения.</p>
           <div class="metric"><strong>0,94 м²</strong><span>MAE на независимом контроле</span></div>
           <ul class="tag-list"><li>OCR</li><li>CatBoost</li><li>Python</li></ul>
         </article>
@@ -175,7 +161,7 @@
             <span style="--h:35%"></span><span style="--h:58%"></span><span style="--h:44%"></span><span style="--h:72%"></span><span style="--h:64%"></span><span style="--h:88%"></span><span style="--h:76%"></span><span style="--h:96%"></span>
           </div>
           <h3>Валидатор жалоб</h3>
-          <p>Модель определяет обоснованность жалобы. Эксперименты построены с временным разделением данных и независимой проверкой.</p>
+          <p>Исследование автоматической оценки жалоб по данным. Сравниваю модель с простым правилом и проверяю качество на отдельных данных.</p>
           <div class="metric"><strong>+63%</strong><span>F1 к базовой стратегии</span></div>
           <ul class="tag-list"><li>CatBoost</li><li>F1</li><li>Validation</li></ul>
         </article>
@@ -184,7 +170,7 @@
           <div class="case-meta"><span>PREDICTIVE ML</span><span>07</span></div>
           <div class="rent-visual" aria-hidden="true"><span class="rent-currency">₽</span><span class="rent-line"></span><i>AREA</i><i>DISTRICT</i><i>FLOOR</i></div>
           <h3>Оценка стоимости аренды</h3>
-          <p>Ансамбль моделей прогнозирует цену по площади, району, этажу и расстоянию до центра.</p>
+          <p>Оценивает аренду по характеристикам жилья: площади, району, этажу. Исследовательская модель, а не готовый сервис оценки недвижимости.</p>
           <div class="metric"><strong>−43,5%</strong><span>ошибка против медианы</span></div>
           <ul class="tag-list"><li>Ensemble</li><li>MAE</li><li>Data</li></ul>
         </article>
@@ -210,12 +196,12 @@
     <section id="about" class="about section-shell section-space">
       <div class="about-label reveal"><p class="kicker">[ 03 — КАК Я РАБОТАЮ ]</p><span class="big-arrow">↘</span></div>
       <div class="about-copy reveal">
-        <h2>ИИ ускоряет работу.<br><span>Ответственность остаётся на мне.</span></h2>
-        <p>Использую Codex и другие AI‑инструменты как инженерную среду: формулирую задачу, декомпозирую, проверяю результат и добиваюсь нужного поведения. Не скрываю этот подход — именно он позволяет быстро собирать серьёзные продукты.</p>
+        <h2>Не нужно говорить<br><span>на языке разработки.</span></h2>
+        <p>Расскажите, что хотите упростить или запустить. Я помогу превратить это в понятный сценарий, покажу первую версию и объясню, как всё работает. Использую AI-инструменты для разработки — решения и проверка результата остаются на мне.</p>
         <div class="principles">
-          <div><span>01</span><b>Сначала понимаю задачу</b><p>Что нужно пользователю и какой результат важен бизнесу.</p></div>
-          <div><span>02</span><b>Показываю прогресс</b><p>Делаю этапами, чтобы направление можно было проверить заранее.</p></div>
-          <div><span>03</span><b>Не обещаю невозможного</b><p>Честно говорю о рисках, ограничениях и том, что ещё нужно проверить.</p></div>
+          <div><span>01 / РАЗБИРАЕМСЯ</span><b>Задача и границы</b><p>Определяем пользователей, функции и то, что должно войти в первую версию.</p></div>
+          <div><span>02 / СОБИРАЕМ</span><b>Версия, которую видно</b><p>Показываю промежуточный результат. Проверяем сценарии и уточняем детали.</p></div>
+          <div><span>03 / ПРОВЕРЯЕМ</span><b>Подготовка к запуску</b><p>Проверяю основные действия и ошибки, объясняю ограничения и дальнейшие шаги.</p></div>
         </div>
       </div>
     </section>
@@ -223,12 +209,13 @@
     <section id="contact" class="contact section-shell section-space reveal">
       <p class="kicker">[ 04 — ДАВАЙТЕ ОБСУДИМ ]</p>
       <span class="contact-star" aria-hidden="true">✳</span>
-      <h2>Начнём<br>с <em>идеи?</em></h2>
+      <h2>Что бы вы хотели<br><em>создать?</em></h2>
       <p>Коротко опишите, что хотите сделать. Я отвечу, задам нужные вопросы и предложу первый понятный шаг.</p>
       <a class="contact-button" href="https://t.me/derneur_dev" target="_blank" rel="noopener noreferrer">
         <span>Написать в Telegram</span><b>↗</b>
       </a>
-      <small>@derneur_dev · обычно отвечаю в течение дня</small>
+      <div class="contact-tools"><span>@derneur_dev</span><button type="button" id="copy-contact" hidden>Скопировать контакт</button></div>
+      <p class="contact-hint">Можно без технического задания. Достаточно рассказать об идее и прислать пример того, что нравится.</p>
     </section>
   </main>
 
@@ -239,6 +226,13 @@
   </footer>
 
   <a class="back-top" href="#top" aria-label="Вернуться наверх">↑</a>
-  <script src="script.js"></script>
+  <nav class="mobile-dock" aria-label="Быстрые действия"><a href="#work">Проекты <span>↓</span></a><a href="https://t.me/derneur_dev" target="_blank" rel="noopener noreferrer">Обсудить задачу <span>↗</span></a></nav>
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span>FORM / LOGIC · PROJECT NOTES</span><button type="button" class="dialog-close" aria-label="Закрыть проект">✕</button></div>
+    <div id="dialog-content"></div>
+  </dialog>
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <script src="script.js?v=20260924-9"></script>
+  <script src="playground.js?v=20260924-9"></script>
 </body>
 </html>
